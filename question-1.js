@@ -10,3 +10,14 @@ const techcoolPeople = [
 ];
 
 // เริ่มเขียนโค้ดตรงนี้
+
+let sumPeople = [...techupPeople, ...techcoolPeople]
+
+const findLess20 = sumPeople.filter((less20)=>{
+    if (less20.age < 20) {
+      return sumPeople
+    }
+})
+
+
+console.log(findLess20);
